@@ -2,6 +2,10 @@
 
 [![Hex Package](https://img.shields.io/hexpm/v/currensees.svg)](https://hex.pm/packages/currensees)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-blue.svg)](https://hexdocs.pm/currensees)
+[![Build Status][ci-badge]][ci-url]
+
+[ci-badge]: https://img.shields.io/github/actions/workflow/status/moatsystems/currensees-ex/ci.yml?branch=main
+[ci-url]: https://github.com/moatsystems/currensees-ex/actions
 
 An [Elixir](https://elixir-lang.org/) package to interact with the [Currency API](https://moatsystems.com/currency-api/).
 

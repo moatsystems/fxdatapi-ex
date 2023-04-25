@@ -9,8 +9,8 @@ alias Convert
 alias ConvertAll
 
 # Set your username and password
-username = "your_username"
-password = "your_password"
+username = System.get_env("USERNAME")
+password = System.get_env("PASSWORD")
 
 # Call the Auth.login/2 function with the provided username and password
 result = Auth.login(username, password)
@@ -159,10 +159,10 @@ case result do
     base_currency = "GBP"
     target_currency = "EUR"
     amount = 500
-    date_convert = "2023_04_02"
+    date_convert = "2023_04_19"
 
-    # Call the Convert.get/5 function
-    convert_result = Convert.get(username, password, base_currency, target_currency, amount, date_convert)
+    # Call the Convert.get/6 function
+    convert_result = Convert.get(username, password, date_convert, base_currency, target_currency, amount)
 
     # Process the convert_result
     case convert_result do

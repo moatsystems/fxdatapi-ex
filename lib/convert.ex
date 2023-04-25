@@ -22,8 +22,13 @@ defmodule Convert do
            "target_currency" => target_currency,
            "amount" => amount
          },
-         headers <- [{"Content-Type", @content_type}, {"Accept", @accept}, {"Cookie", cookie}],
-         {:ok, %HTTPoison.Response{status_code: 200, body: response_body}} <- HTTPoison.post(@base_url, Poison.encode!(post_body), headers) do
+         headers <- [
+           {"Content-Type", @content_type},
+           {"Accept", @accept},
+           {"Cookie", cookie}
+         ],
+         {:ok, %HTTPoison.Response{status_code: 200, body: response_body}} <-
+           HTTPoison.post(@base_url, Poison.encode!(post_body), headers) do
       {:ok, Poison.decode!(response_body)}
     else
       {:error, error} -> {:error, error}

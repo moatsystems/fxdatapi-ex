@@ -1,3 +1,7 @@
+# 0.1.1 (April 25, 2023)
+
+* Convert.ex bug fixes
+
 # 0.1.0 (April 25, 2023)
 
 * Example.exs added.
