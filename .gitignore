@@ -1,0 +1,57 @@
+# Ignore Elixir build artifacts
+/_build
+/cover
+/priv/static
+/doc
+/ebin
+/consolidated
+
+# Ignore Elixir logs
+erl_crash.dump
+*.ez
+
+# Ignore Elixir dependency directories
+/deps
+/apps/*/deps
+
+# Ignore Elixir releases
+/rel
+
+# Ignore Elixir configuration files
+/sys.config
+/vm.args
+/config/*.secret.exs
+
+# Ignore Elixir IEx history
+/.iex.exs
+
+# Ignore Elixir Dialyzer PLT files
+/*.plt
+/dialyxir_*plt
+
+# Ignore Elixir dependencies cache
+/.elixir_ls
+
+# Ignore Elixir Mix artifacts
+/.fetch
+
+# Ignore Elixir Nerves artifacts
+/.nerves
+
+# Ignore Node.js dependencies
+/node_modules
+
+# Ignore operating system-specific files
+.DS_Store
+*.swp
+*~
+._*
+Thumbs.db
+
+# Ignore IDE/project-specific files
+/.idea
+/.vscode
+
+# Others
+Makefile
+push.sh
