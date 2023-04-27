@@ -12,7 +12,7 @@ Add the currensees package as a dependency in your `mix.exs`:
 ```elixir
 def deps do
   [
-    {:currensees, "~> 0.1.1"}
+    {:currensees, "~> 0.1.2"}
   ]
 end
 ```
