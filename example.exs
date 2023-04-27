@@ -7,10 +7,12 @@ alias DailyAverage
 alias WeeklyAverage
 alias Convert
 alias ConvertAll
+alias Performances
+alias Signals
 
 # Set your username and password
-username = System.get_env("USERNAME")
-password = System.get_env("PASSWORD")
+# username = System.get_env("USERNAME")
+# password = System.get_env("PASSWORD")
 
 # Call the Auth.login/2 function with the provided username and password
 result = Auth.login(username, password)
@@ -94,7 +96,7 @@ case result do
     day = 19
     month = 4
     year = 2023
-    margin_spread_uuid = "0673aff8-e306-11ed-b4ea-acde48001122"
+    margin_spread_uuid = "001a2512-e061-11ed-9677-acde48001122"
 
     # Call the MarginsSpreads.get_all/4 function
     get_all_result = MarginsSpreads.get_all(username, password, day, month, year)
@@ -190,6 +192,68 @@ case result do
 
       {:error, error_message} ->
         IO.puts("Convert all failed:")
+        IO.puts(error_message)
+    end
+
+    # Performances Endpoint
+    performance_uuid = "d4762c44-e3c6-11ed-8570-acde48001122"
+
+    # Call the Performances.get_all/2 function
+    get_all_performances_result = Performances.get_all(username, password)
+
+    # Process the get_all_performances_result
+    case get_all_performances_result do
+      {:ok, response} ->
+        IO.puts("Get all performances successful!")
+        IO.inspect(response)
+
+      {:error, error_message} ->
+        IO.puts("Get all performances failed:")
+        IO.puts(error_message)
+    end
+
+    # Call the Performances.get_by_id/3 function
+    get_by_id_performances_result = Performances.get_by_id(username, password, performance_uuid)
+
+    # Process the get_by_id_performances_result
+    case get_by_id_performances_result do
+      {:ok, response} ->
+        IO.puts("Get performance by ID successful!")
+        IO.inspect(response)
+
+      {:error, error_message} ->
+        IO.puts("Get performance by ID failed:")
+        IO.puts(error_message)
+    end
+
+    # Signals Endpoint
+    signal_uuid = "d46cc05a-e3c6-11ed-8570-acde48001122"
+
+    # Call the Signals.get_all/2 function
+    get_all_signals_result = Signals.get_all(username, password)
+
+    # Process the get_all_signals_result
+    case get_all_signals_result do
+      {:ok, response} ->
+        IO.puts("Get all signals successful!")
+        IO.inspect(response)
+
+      {:error, error_message} ->
+        IO.puts("Get all signals failed:")
+        IO.puts(error_message)
+    end
+
+    # Call the Signals.get_by_id/3 function
+    get_by_id_signals_result = Signals.get_by_id(username, password, signal_uuid)
+
+    # Process the get_by_id_signals_result
+    case get_by_id_signals_result do
+      {:ok, response} ->
+        IO.puts("Get signal by ID successful!")
+        IO.inspect(response)
+
+      {:error, error_message} ->
+        IO.puts("Get signal by ID failed:")
         IO.puts(error_message)
     end
 

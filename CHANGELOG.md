@@ -1,6 +1,10 @@
+# 0.1.2 (April 27, 2023)
+
+* Performances.ex and Signals.ex added.
+
 # 0.1.1 (April 25, 2023)
 
-* Convert.ex bug fixes
+* Convert.ex bug fixes.
 
 # 0.1.0 (April 25, 2023)
 
