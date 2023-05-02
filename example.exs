@@ -5,6 +5,7 @@ alias Historical
 alias MarginsSpreads
 alias DailyAverage
 alias WeeklyAverage
+alias MonthlyAverage
 alias Convert
 alias ConvertAll
 alias Performances
@@ -154,6 +155,22 @@ case result do
 
       {:error, error_message} ->
         IO.puts("Get weekly average failed:")
+        IO.puts(error_message)
+    end
+
+    # Monthly Average Endpoint
+    year = "2023"
+    month = "04"
+    monthly_average_result = MonthlyAverage.get(username, password, year, month)
+
+    # Process the monthly_average_result
+    case monthly_average_result do
+      {:ok, response} ->
+        IO.puts("Get monthly average successful!")
+        IO.inspect(response)
+
+      {:error, error_message} ->
+        IO.puts("Get monthly average failed:")
         IO.puts(error_message)
     end
 

@@ -1,3 +1,7 @@
+# 0.1.3 (May 02, 2023)
+
+* Monthly_average.ex added.
+
 # 0.1.2 (April 27, 2023)
 
 * Performances.ex and Signals.ex added.
