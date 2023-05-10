@@ -1,7 +1,7 @@
 defmodule Performances do
   alias HTTPoison
 
-  @base_url "https://currensees.com/v1/performances"
+  @base_url "https://fxdatapi.com/v1/performances"
   @accept "application/json"
 
   defp login_and_get_cookie(username, password) do

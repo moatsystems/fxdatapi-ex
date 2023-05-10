@@ -1,12 +1,12 @@
-defmodule Currensees.MixProject do
+defmodule Fxdatapi.MixProject do
   use Mix.Project
 
-  @source_url "https://github.com/moatsystems/currensees-ex"
-  @version "0.1.3"
+  @source_url "https://github.com/moatsystems/fxdatapi-ex"
+  @version "0.1.4"
 
   def project do
     [
-      app: :currensees,
+      app: :fxdatapi,
       version: @version,
       elixir: "~> 1.14",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -15,7 +15,7 @@ defmodule Currensees.MixProject do
       package: package(),
       docs: docs(),
       deps: deps(),
-      name: "Currensees",
+      name: "Fxdatapi",
       source_url: @source_url
     ]
   end
@@ -56,10 +56,10 @@ defmodule Currensees.MixProject do
 
   defp package() do
     [
-      name: "currensees",
+      name: "fxdatapi",
       files: ~w(lib .formatter.exs mix.exs README* LICENSE* CHANGELOG*),
       licenses: ["BSD 3-Clause"],
-      links: %{"GitHub" => "https://github.com/moatsystems/currensees-ex"}
+      links: %{"GitHub" => "https://github.com/moatsystems/fxdatapi-ex"}
     ]
   end
 end

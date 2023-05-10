@@ -1,7 +1,7 @@
 defmodule MarginsSpreads do
   alias HTTPoison
 
-  @base_url "https://currensees.com/v1/margins_spreads"
+  @base_url "https://fxdatapi.com/v1/margins_spreads"
   @accept "application/json"
 
   defp login_and_get_cookie(username, password) do

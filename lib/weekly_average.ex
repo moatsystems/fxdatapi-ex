@@ -1,7 +1,7 @@
 defmodule WeeklyAverage do
   alias HTTPoison
 
-  @base_url "https://currensees.com/v1/weekly_average"
+  @base_url "https://fxdatapi.com/v1/weekly_average"
   @content_type "application/json"
   @accept "application/json"
 

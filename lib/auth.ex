@@ -5,7 +5,7 @@ defmodule Auth do
 
   alias HTTPoison
 
-  @login_url "https://currensees.com/v1/login"
+  @login_url "https://fxdatapi.com/v1/login"
   @content_type "application/json"
   @accept "application/json"
 

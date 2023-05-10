@@ -1,7 +1,7 @@
 defmodule ConvertAll do
   alias HTTPoison
 
-  @base_url "https://currensees.com/v1/convert_all"
+  @base_url "https://fxdatapi.com/v1/convert_all"
   @content_type "application/json"
   @accept "application/json"
 

@@ -1,7 +1,7 @@
 defmodule Historical do
   alias HTTPoison
 
-  @base_url "https://currensees.com/v1/historical"
+  @base_url "https://fxdatapi.com/v1/historical"
   @accept "application/json"
 
   defp login_and_get_cookie(username, password) do
