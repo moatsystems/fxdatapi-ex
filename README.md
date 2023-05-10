@@ -12,7 +12,7 @@ Add the fxdatapi package as a dependency in your `mix.exs`:
 ```elixir
 def deps do
   [
-    {:fxdatapi, "~> 0.1.3"}
+    {:fxdatapi, "~> 0.1.4"}
   ]
 end
 ```
